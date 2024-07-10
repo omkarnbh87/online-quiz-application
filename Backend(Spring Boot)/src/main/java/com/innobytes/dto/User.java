@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class User implements UserDetails {
 
-	private int id;
+	private long id;
 	private String firstName;
 	private String lastName;
 	private String email;

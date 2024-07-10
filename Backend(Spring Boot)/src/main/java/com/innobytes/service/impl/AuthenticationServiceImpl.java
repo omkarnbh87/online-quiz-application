@@ -67,7 +67,10 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
 		String jwt = jwtService.generateToken(user);
 
-		JwtResponse jwtResponse = JwtResponse.builder().token(jwt).build();
+		JwtResponse jwtResponse = JwtResponse.builder()
+				.token(jwt)
+				.role(Role.getRoleEnumById(user.getRole()).getRoleName())
+				.build();
 
 		System.out.println("generated token:" + jwt);
 		return jwtResponse;
