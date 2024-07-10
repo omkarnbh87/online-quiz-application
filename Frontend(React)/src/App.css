@@ -3,9 +3,19 @@ body {
   background-color: #f0f2f5;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   margin: 0;
+}
+
+.header {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  position: fixed;
+  top: 0;
 }
 
 .container {
@@ -15,6 +25,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   text-align: center;
+  margin-top: 80px; /* To ensure it doesn't overlap with header */
 }
 
 form {
@@ -36,8 +47,10 @@ input {
 
 button {
   padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   background-color: #4caf50;
   color: white;
   font-size: 16px;

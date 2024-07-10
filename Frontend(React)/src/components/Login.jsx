@@ -21,7 +21,7 @@ const Login = () => {
   return (
     <form onSubmit={handleLogin}>
       <div>
-        <label>Email:</label>
+        <label>Username:</label>
         <input
           type="email"
           value={email}

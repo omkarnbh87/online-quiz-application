@@ -1,7 +1,8 @@
 import "./App.css";
 import { useState } from "react";
-import Login from "./Login";
-import Register from "./Register";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import Header from "./components/Header";
 
 function App() {
   const [isLogin, setIsLogin] = useState(true);
